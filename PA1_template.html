@@ -214,7 +214,7 @@ if (!file.exists(&quot;activity.csv&quot;)) {
     unzip(&quot;activity.zip&quot;)
 }
 dat &lt;- read_csv(&quot;activity.csv&quot;, col_names = TRUE, col_types = &quot;ncn&quot;)
-# Convert date and interval to R objects
+# Convert date to R objects
 dat$date &lt;- ymd(dat$date)
 </code></pre>
 

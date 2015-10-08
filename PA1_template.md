@@ -21,7 +21,7 @@ if (!file.exists("activity.csv")) {
     unzip("activity.zip")
 }
 dat <- read_csv("activity.csv", col_names = TRUE, col_types = "ncn")
-# Convert date and interval to R objects
+# Convert date to R objects
 dat$date <- ymd(dat$date)
 ```
 ## What is mean total number of steps taken per day?
